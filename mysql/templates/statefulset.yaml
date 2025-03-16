@@ -24,7 +24,7 @@ spec:
       - name: mysql-helm
         image: bhavyasomisetti/mysql:{{ .Values.statefulset.version }}
         volumeMounts:
-        - name: mysql
+        - name: mysql-helm
           mountPath: /var/lib/mysql
   # Instead of creating a PVC resource, you can directly provide in statefulset
   volumeClaimTemplates:
