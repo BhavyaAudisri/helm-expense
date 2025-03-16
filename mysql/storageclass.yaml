@@ -3,5 +3,5 @@ kind: StorageClass
 metadata:
   name: ebs-helm
 provisioner: ebs.csi.aws.com
-reclaimPolicy: Retain
+reclaimPolicy: Delete
 volumeBindingMode: WaitForFirstConsumer
